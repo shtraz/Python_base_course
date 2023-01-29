@@ -1,2 +1,3 @@
-a = 5
-print(a)
+a = True
+if a == True:
+    print(a)
