@@ -11,3 +11,4 @@ print(mode)  # -> checked
 checked = False
 personality = ("не проверено", "проверено")[checked]
 print(personality)  # -> проверено
+print(("не проверено", "проверено")[True])
