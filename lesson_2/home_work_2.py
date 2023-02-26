@@ -7,26 +7,26 @@
 
 # Пусть Решка будет = 0, тогда Орел = 1.
 
-# from random import randint
-#
-# count_coins = int(input('Введите количество монет '))
-# my_list = [randint(0, 1) for i in range(count_coins)]
-# tails_coins = 0
-# eagle_coins = 0
-#
-# print(f'Выпало Орлов и Решек {my_list}')
-#
-# for el in my_list:
-#     if el == 0:
-#         tails_coins += 1
-#     else:
-#         eagle_coins += 1
-#
-# if tails_coins <= eagle_coins:
-#     print(f'Решек нужно перевернуть: {tails_coins}')
-#
-# else:
-#     print(f'Орлов нужно перевернуть: {eagle_coins}')
+from random import randint
+
+count_coins = int(input('Введите количество монет '))
+my_list = [randint(0, 1) for i in range(count_coins)]
+tails_coins = 0
+eagle_coins = 0
+
+print(f'Выпало Орлов и Решек {my_list}')
+
+for el in my_list:
+    if el == 0:
+        tails_coins += 1
+    else:
+        eagle_coins += 1
+
+if tails_coins <= eagle_coins:
+    print(f'Решек нужно перевернуть: {tails_coins}')
+
+else:
+    print(f'Орлов нужно перевернуть: {eagle_coins}')
 
 
 """
@@ -35,17 +35,17 @@
 Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
 """
 
-# x = int(input("Первое число ≤1000: "))
-# y = int(input("Второе число ≤1000: "))
-# summ = x + y
-# product = x * y
-#
-# x = int((summ + ((-summ) ** 2 - 4 * product) ** 0.5) / 2)
-# y = int((summ - ((-summ) ** 2 - 4 * product) ** 0.5) / 2)
-#
-# print(f'S чисел = {summ}')
-# print(f'P чисел = {product}')
-# print(f'Загаданные Петей числа: {x}, {y}')
+x = int(input("Первое число ≤1000: "))
+y = int(input("Второе число ≤1000: "))
+summ = x + y
+product = x * y
+
+x = int((summ + ((-summ) ** 2 - 4 * product) ** 0.5) / 2)
+y = int((summ - ((-summ) ** 2 - 4 * product) ** 0.5) / 2)
+
+print(f'S чисел = {summ}')
+print(f'P чисел = {product}')
+print(f'Загаданные Петей числа: {x}, {y}')
 
 """
 Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
@@ -58,20 +58,21 @@ while i <= N:
     print(i, end=' ')
     i *= 2
 
+
 """
 Задачи с семинара: 
+a = int(886.58 * 10 % 10)
+b = int(110.84 * 10 % 10)
+
+print(a)
+print(b)
+
+
+Про координаты
+x1 = float(input('Введите x1: '))
+y1 = float(input('Введите y1: '))
+x2 = float(input('Введите x2: '))
+y2 = float(input('Введите y2: '))
+
+print(((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5)
 """
-# a = int(886.58 * 10 % 10)
-# b = int(110.84 * 10 % 10)
-#
-# print(a)
-# print(b)
-
-
-# Про координаты
-# x1 = float(input('Введите x1: '))
-# y1 = float(input('Введите y1: '))
-# x2 = float(input('Введите x2: '))
-# y2 = float(input('Введите y2: '))
-#
-# print(((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5)
