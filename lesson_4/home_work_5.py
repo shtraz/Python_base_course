@@ -44,21 +44,33 @@ else:
 находясь перед некоторым кустом заданной во входном файле грядки.
 """
 
+# Вводим количество кустов
 count_bush = int(input("\nВведите количество кустов: "))
 bush_list = []
 list_berries = []
 max_berries = 0
 
+# Заполняем список кустов
 for el in range(count_bush):
     berries = int(input(f'Введите количество ягод на кусте № {el + 1}: '))
     bush_list.append(berries)
 
+# Выводим сколько ягод на каком кусте растет
 for i in range(len(bush_list)):
     print(f'На кусте № {i + 1} растет {bush_list[i]} ягод')
 
+# Считаем сколько можно собрать ягод с кустов
 for i in range(len(bush_list) - 1):
-    list_berries.append(bush_list[i] + bush_list[i - 1] + bush_list[i + 1])
-list_berries.append(bush_list[-2] + bush_list[-1] + bush_list[0])
+    if len(bush_list) > 2: # Если кустов > 2
+        list_berries.append(bush_list[i] + bush_list[i - 1] + bush_list[i + 1])
+    elif len(bush_list) == 2: # Если куста всего 2
+        list_berries.append(bush_list[i] + bush_list[i + 1])
+
+# Если куст всего 1
+if len(bush_list) <= 1:
+     list_berries = bush_list
+
+# print(list_berries)
 
 for el in list_berries:
     if el > max_berries:
