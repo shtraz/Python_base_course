@@ -1,7 +1,7 @@
 import os
 import shutil
 
-# os.chdir(path) - смена тикущей дириктории
+# os.chdir(path) - смена текущей дириктории
 # os.chdir('C:/Users/123123132/Python/asdasd')
 
 # os.getcwd() - текущая рабочая директория
