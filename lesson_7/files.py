@@ -25,7 +25,12 @@
 #     data.write('line 1\n')
 #     data.write('line 2\n')
 
-
+# with open('file.txt', 'a') as data:
+#     data.write('line 1\n')
+#     data.write('line 2\n')
+#     data.write('line 3\n')
+#
+#
 # path = 'file.txt'
 # data = open('file.txt', 'r')
 # for line in data:
