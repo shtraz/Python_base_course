@@ -14,25 +14,25 @@
     **Вывод:** Парам пам-пам
 """
 
-# phrases = input('Введите фразу: ').split()
-# letters = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я']
-# # print(phrases)
-# phrase_list = []
-#
-# for i in phrases:
-#     count = 0
-#     for j in i:
-#         if j in letters:
-#             count += 1
-#     phrase_list.append(count)
-#
-# # print(phrase_list)
-# # print(set(phrase_list))
-#
-# if len(set(phrase_list)) == 1:
-#     print('Парам пам-пам')
-# else:
-#     print('Пам парам')
+phrases = input('Введите фразу: ').split()
+letters = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я']
+# print(phrases)
+phrase_list = []
+
+for i in phrases:
+    count = 0
+    for j in i:
+        if j in letters:
+            count += 1
+    phrase_list.append(count)
+
+# print(phrase_list)
+# print(set(phrase_list))
+
+if len(set(phrase_list)) == 1:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
 
 """
 Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), 
